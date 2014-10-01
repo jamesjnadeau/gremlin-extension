@@ -18,5 +18,14 @@ chrome.runtime.onMessage.addListener(
 			case 'stop_horde':
 				horde.stop();
 				break;
+			
+			case 'seed_horde':
+				horde.seed(request.value);
+				break;
+			
+			case 'status':
+				console.log('here');
+				sendResponse(horde);
+				break;
 		}
 	});

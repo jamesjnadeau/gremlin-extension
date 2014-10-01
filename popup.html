@@ -1,23 +1,62 @@
 <!doctype html>
 <html>
   <head>
-    <title>Gremlins</title>
-    <style>
-      body {
-        min-width: 357px;
-        min-height: 50px;
-        overflow-x: hidden;
-      }
-      
-      button {
+	<title>Gremlins</title>
+	<link href="picnic.css" rel="stylesheet" type="text/css">
+	<style>
+	  body {
+		min-width: 420px;
+		min-height: 110px;
+		overflow-x: hidden;
+	  }
+	  
+	  button, input {
 		float: right;  
 	  }
-    </style>
-	<button id="unleash_horde" >Unleash Horde</button>
-	<button id="stop_horde" style="display: none;" >Stop</button>
-    <script src="popup.js"></script>
+	</style>
+	
+	<script src="popup.js"></script>
   </head>
   <body>
+	<nav>
+		<a target="_blank" href="https://github.com/jamesjnadeau/gremlin-extension" class="main">
+			<img src="gremlin.png" alt="Gremlin.js">
+			<span style="top: -10px; left: 5px; position: relative;" >Gremlins.js Extension</span>
+		</a>
+		
+		<!-- responsive -->
+		<input id="bmenu" class="burgercheck" type="checkbox">
+		<label for="bmenu" class="burgermenu"></label>
+		<!-- /responsive -->
+		
+		<div class="menu">
+			<a href="https://github.com/marmelab/gremlins.js/" class="icon-button">Gremilins Source</a>
+			<a target="_blank" href="http://jamesjnadeau.com" class="icon-button">Extension By</a>
+		</div>
+	</nav>
+	
+	<div style="margin-top: 4em;" >
+		<div class="row">
+			<a href="https://github.com/marmelab/gremlins.js/" ></a>
+		</div>
+		<div class="row">
+			<div class="third">
+				<h4 style="padding-left: .9em; padding-top: .6em">Seed</h4>
+			</div>
+			<div class="half">
+				<input type="number" id="seed_horde" >
+			</div>
+		</div>
+		<div class="row">
+			<div class="full" >
+				<button id="unleash_horde" class="warning" >Unleash Horde</button>
+				<button id="stop_horde" style="display: none;" class="error" >Stop The Chaos</button>
+			</div>
+		</div>
+	</div>
+	
+	
+	
   </body>
 </html>
 
