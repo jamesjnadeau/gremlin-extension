@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Gremlin.js Testing Extension",
+  "description": "a extension based version of https://github.com/marmelab/gremlins.js",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "browser_action": {
+    "default_icon": "gremlin.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": [
+		"gremlins.min.js",
+		"content_script.js"
+		]
+    }
+  ]
+}
