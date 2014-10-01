@@ -3,7 +3,7 @@
 
   "name": "Gremlin.js Testing Extension",
   "description": "a extension based version of https://github.com/marmelab/gremlins.js, also known as monkey testing.",
-  "version": "1.0",
+  "version": "1.1",
   "permissions": [
     "activeTab"
   ],
